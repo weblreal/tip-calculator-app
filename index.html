@@ -21,24 +21,24 @@
           <div class="bill">
           <h2>Bill</h2>
           <img class="icon icon-dollar" src="images/icon-dollar.svg" alt="">
-          <input class="input-bill" type="text" placeholder="0" >
+          <input id="input-bill" class="input-bill" type="number" placeholder="0" >
           </div>
         </header>
           <div class="select-tip">
             <h2>Select Tip %</h2>
             <div class="buttons">
-              <button class="discount discount-1">5%</button>
-              <button class="discount discount-2">10%</button>
-              <button class="discount discount-3">15%</button>
-              <button class="discount discount-4">25%</button>
-              <button class="discount discount-5">50%</button>
-              <input class="input-custom" type="text" placeholder="Custom">
+              <button id="percentage-1" onclick="calculate()" class="percentage percentage-1">5%</button>
+              <button id="" class="percentage percentage-2">10%</button>
+              <button id="" class="percentage percentage-3">15%</button>
+              <button id="" class="percentage percentage-4">25%</button>
+              <button id="" class="percentage percentage-5">50%</button>
+              <input id="" class="input-custom" type="text" placeholder="Custom">
             </div>
           </div>
           <div class="number-of-people">
             <h2>Number of People</h2>
             <img class="icon icon-people" src="images/icon-person.svg" alt="">
-            <input class="input-number-of-people" type="text" placeholder="0">
+            <input id="input-number-of-people" class="input-number-of-people" type="text" placeholder="0">
           </div>
       </div>
       <div class="tab-right">
@@ -50,7 +50,7 @@
                 <h4>/ person</h4>
               </div>
               <div>
-                <h2 class="value value-tip">$0.00</h2>
+                <h2 id="value-tip" class="value value-tip">$0.00</h2>
               </div>
             </div>
             <div class="container-value total-amount">
@@ -59,7 +59,7 @@
                 <h4>/ person</h4>
               </div>
               <div>
-                <h2 class="value value-total">$0.00</h2>
+                <h2 id="value-total" class="value value-total">$0.00</h2>
               </div>
             </div>
           </div>
@@ -74,5 +74,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Web Real</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
