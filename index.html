@@ -1,79 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="tab-container">
-      <div class="tab-left">
-        <header>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab-container">
+        <div class="tab-left">
           <div class="bill">
-          <h2>Bill</h2>
-          <img class="icon icon-dollar" src="images/icon-dollar.svg" alt="">
-          <input id="input-bill" class="input-bill" type="number" placeholder="0" >
+            <h2>Bill</h2>
+            <img class="icon icon-dollar" src="images/icon-dollar.svg" alt="" />
+            <input class="input input-bill" type="number" placeholder="0" />
+            <p class="prompt-text prompt-text-bill hidden">Can't be zero</p>
           </div>
-        </header>
           <div class="select-tip">
             <h2>Select Tip %</h2>
             <div class="buttons">
-              <button id="percentage-1" onclick="calculate()" class="percentage percentage-1">5%</button>
-              <button id="" class="percentage percentage-2">10%</button>
-              <button id="" class="percentage percentage-3">15%</button>
-              <button id="" class="percentage percentage-4">25%</button>
-              <button id="" class="percentage percentage-5">50%</button>
-              <input id="" class="input-custom" type="text" placeholder="Custom">
+              <button value="0.05" class="percentage percentage-1">5%</button>
+              <button value="0.10" class="percentage percentage-2">10%</button>
+              <button value="0.15" class="percentage percentage-3">15%</button>
+              <button value="0.25" class="percentage percentage-4">25%</button>
+              <button value="0.50" class="percentage percentage-5">50%</button>
+              <input
+                class="input input-custom"
+                type="number"
+                placeholder="Custom"
+              />
+              <p class="prompt-text prompt-text-custom hidden">Can't be zero</p>
             </div>
           </div>
           <div class="number-of-people">
             <h2>Number of People</h2>
-            <img class="icon icon-people" src="images/icon-person.svg" alt="">
-            <input id="input-number-of-people" class="input-number-of-people" type="text" placeholder="0">
+            <img class="icon icon-people" src="images/icon-person.svg" alt="" />
+            <input
+              class="input input-number-of-people"
+              type="number"
+              placeholder="0"
+            />
+            <p class="prompt-text prompt-text-input hidden">Can't be zero</p>
           </div>
-      </div>
-      <div class="tab-right">
-        <div class="inside-tab-right">
-          <div class="container-top">
-            <div class="container-value tip-amount">
-              <div class="left-tip-amount">
-                <h3>Tip Amount</h3>
-                <h4>/ person</h4>
+        </div>
+        <div class="tab-right">
+          <div class="inside-tab-right">
+            <div class="container-top">
+              <div class="container-value tip-amount">
+                <div class="left-tip-amount">
+                  <h3>Tip Amount</h3>
+                  <h4>/ person</h4>
+                </div>
+                <div>
+                  <h2 id="value-tip" class="value value-tip">$0.00</h2>
+                </div>
               </div>
-              <div>
-                <h2 id="value-tip" class="value value-tip">$0.00</h2>
+              <div class="container-value total-amount">
+                <div>
+                  <h3>Total</h3>
+                  <h4>/ person</h4>
+                </div>
+                <div>
+                  <h2 id="value-total" class="value value-total">$0.00</h2>
+                </div>
               </div>
             </div>
-            <div class="container-value total-amount">
-              <div>
-                <h3>Total</h3>
-                <h4>/ person</h4>
-              </div>
-              <div>
-                <h2 id="value-total" class="value value-total">$0.00</h2>
-              </div>
+            <div class="container-bottom">
+              <button class="reset-btn">Reset</button>
             </div>
           </div>
-          <div class="container-bottom">
-            <button class="reset-btn">Reset</button>
-          </div> 
         </div>
       </div>
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Web Real</a>.
-  </div>
-  <script src="index.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Web Real</a>.
+    </div>
+  </body>
 </html>
