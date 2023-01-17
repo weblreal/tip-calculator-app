@@ -9,7 +9,7 @@ This is a solution for Tip Calculator App challenge by Frontend Mentor https://w
 - [My Process](#my-process)
   - [Useful resources](#useful-resources)
   - [Built with](#built-with)
- - [Acknowledgments][#acknowledgments]
+ - [Acknowledgments](#acknowledgments)
  - [What I learn](#what-i-learn)
  - [Author](#author)
 
